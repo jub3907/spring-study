@@ -21,12 +21,6 @@ class MemberServiceTest {
         memberService = new MemberService(memberRepository);
     }
 
-    // 테스트 반복 시 마다 repo 초기화
-    @AfterEach
-    public void afterEach() {
-        memberRepository.clearStore();
-
-    }
 
     @Test
     void 회원가입(){
